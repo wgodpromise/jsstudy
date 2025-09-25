@@ -1,0 +1,62 @@
+.wrapper {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    width: 700px;
+    height: 900px;
+    border: 1px solid #D8D9DA;
+    border-radius: 20px;
+}
+
+
+.wrapperItem {
+    display: flex;
+    flex-direction:column;
+    justify-self: center;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+input {
+    width: 410px;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+button {
+    width: 420px;
+    height: 30px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+button:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.letter {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+
+.out {
+    display: grid;
+    justify-content: center;
+    background-color: gray;
+    height: 30px;
+    width: 400px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
