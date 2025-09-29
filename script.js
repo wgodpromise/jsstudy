@@ -1,13 +1,13 @@
-const in1 = document.getElementById('myInput1')
-const in2 = document.querySelector('#myInput2')
-const btn = document.getElementById('myButton')
-const out = document.querySelector('#result')
+const input1 = document.getElementById('myInput1')
+const input2 = document.querySelector('#myInput2')
+const btn = document.getElementById('btn')
+const output = document.querySelector('#result')
 
-btn.addEventListener('click', (func)=>{
+btn.addEventListener('click', (e)=>{
     
-    func.preventDefault()
-    const num1 = Number(in1.value)
-    const num2 = Number(in2.value)
+    e.preventDefault()
+    const num1 = Number(input1.value)
+    const num2 = Number(input2.value)
     const errors = {
         one: false,
         two: false
@@ -29,9 +29,8 @@ btn.addEventListener('click', (func)=>{
         resultText = 'Ошибка: второе значение не является числом'
     }
     if (!errors.one&&!errors.two){
-        const result = num1 + num2;
-        resultText = `Результат: ${num1+num2}`;
+        resultText = `Результат: ${num1+num2}`
     } 
 
-    out.innerText = resultText
+    output.innerText = resultText
 })
