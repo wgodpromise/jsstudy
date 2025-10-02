@@ -65,3 +65,15 @@ button:hover {
     font-size: 30px;
     font-weight: bold;
 }
+
+.output {
+    background-color: black;
+    border-radius: 20px;
+    width: 410px;
+    height: 100px;
+    color: white;
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}

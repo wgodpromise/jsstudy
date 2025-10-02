@@ -3,7 +3,7 @@ const input2 = document.querySelector('#myInput2')
 const btn = document.getElementById('btn')
 const output = document.querySelector('#result')
 
-btn.addEventListener('click', (e)=>{
+btn.addEventListener('click', (e) => {
     
     e.preventDefault()
     const num1 = Number(input1.value)
@@ -13,10 +13,10 @@ btn.addEventListener('click', (e)=>{
         two: false
     }
     let resultText = ''
-    if  (isNan(num1)){
+    if  (isNaN(num1)){
         errors.one = true
     }
-    if (isNan(num2)){
+    if (isNaN(num2)){
         errors.two = true
     }
     if (errors.one && errors.two){
